@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+#area {
+    color: #fff;
+    background-color: #376b35;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}

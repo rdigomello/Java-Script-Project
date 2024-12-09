@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Países</h1>
+    De qual país vc é: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Clicar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            let txtp = window.document.querySelector('input#txtp')
+            let res = window.document.querySelector('div#res')
+            let p = String(txtp.value)
+            res.innerHTML = `<p>Você é do ${p}<p>`
+            if ( p == 'Brasil') {
+                res.innerHTML += `<p>Você é brasileiro<p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro<p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
